@@ -3,3 +3,5 @@ root = true
 [*]
 identy_style = space
 identy_size = 2
+end_of_line = lf
+charset = utf-8
