@@ -9,7 +9,7 @@ async function query(queryObject) {
     password: process.env.POSTGRES_PASSWORD,
     password: process.env.POSTGRES_PASSWORD,
     ssl: {
-      rejectUnauthorized: false,
+      rejectUnauthorized: process.NODE_ENV === "development" ? false : true,
     },
   });
 
